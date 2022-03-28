@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/518c54df10.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="shortcut icon" href="/Landing_Page/icon/favicon.ico" type="image/x-icon" />
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <section id="main-section">
+        <div id="main-container">
+            <nav id="navbar">
+                <img id="logo" src="/Landing_Page/icon/LOGO.png" />
+                <ul id="nav-container">
+                    <button id="hamburger">
+                        <img id="menu-icon" class="hamburger" src="/Landing_Page/icon/menu.png">
+                        <!-- <img id="close-icon" class="hamburger" src="/Landing_Page/icon/close.png"> -->
+                    </button>
+                    <li class="nav-links"><a href="/Landing_Page/homepage/home.html">HOME</a></li>
+                    <li class="nav-links"><a style="color: #d9461f" href="
+                            /Landing_Page/portfolio/portfolio.html">PORTFOLIO</a></li>
+                    <li id="shop-nav-links" class="nav-links"><a href="/Landing_Page/Shop/shop.html">SHOP</a></li>
+                    <li class="nav-links"><a href="/Landing_Page/events/events.html">EVENTS</a></li>
+                    <li class="nav-links"><a href="/Landing_Page/homepage/home.html">ABOUT</a></li>
+                    <li class="nav-links"><a href="/Landing_Page/homepage/home.html">CONTACT</a></li>
+            </nav>
+            <!-- MAIN CONTENT -->
+            <div id="main-content-container">
+                <div id="main-content">
+                    <div id="content-text">
+                        <h2>Overflow</h2>
+                        <p id="content-smol"> WATER JUGS, 2016
+                        </p>
+                        <p id="content-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quaerat
+                            omnis soluta, maiores voluptate voluptatibus provident! Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
+                            Officiis quaerat omnis soluta, maiores
+                            voluptate voluptatibus provident!</p>
+                        <button id="shop">SHOP THIS COLLECTION <span>→</span></button>
+                    </div>
+                    <div id="img-container">
+
+                        <img class="img-items img1" src="portfolio-images/portfolio-collection-img.jpg">
+                        <img class="img-items img2" src="portfolio-images/portfolio-collection-img2.jpg" alt="">
+                        <img class="img-items img3" src="portfolio-images/portfolio-collection-image3.jpg" alt="">
+                    </div>
+                </div>
+                <div id="click-main-container">
+                    <div id="click-container">
+                        <div id="click"><button onclick="nextSlide(-1)" id="left-btn"
+                                href=""><span>←</span></button><button onclick="nextSlide(1)" id="right-btn"
+                                href=""><span>→</span></button></div>
+                        <!-- <div id="click-text">Click on the image to enlage</div> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="brown-section-main">
+        <div></div>
+    </section>
+    <section id="footer-main-container">
+        <div id="footer-container">
+            <div>
+                <p>Designer: AJ Lupac</p>
+                <br>
+                <p>Copyright 2017 Adrienne Ceramics</p>
+            </div>
+
+            <div>
+                <button><i class="fa-brands fa-instagram"></i></button>
+                <button><i class="fa-brands fa-facebook-f"></i></button>
+            </div>
+        </div>
+    </section>
+    <script src="portfolio.js"></script>
+</body>
+
+</html>

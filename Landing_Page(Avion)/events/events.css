@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;300;400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat';
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100vw;
+  /* height: 100vh; */
+  background-image: url('/Landing_Page/portfolio/portfolio-images/portfolio-background2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+h3 {
+  font-family: 'Crimson Pro';
+  display: inline-block;
+}
+
+body::-webkit-scrollbar {
+  width: 0.3rem;
+}
+body::-webkit-scrollbar-track {
+  background-color: #f7f7f7;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #d9461f;
+}
+
+#main-section {
+  display: grid;
+  justify-self: center;
+  align-self: start;
+  justify-content: center;
+  height: 100vh;
+}
+
+#main-container {
+  display: grid;
+  width: 85vw;
+  height: 100vh;
+  grid-template-rows: 1fr 3fr;
+}
+
+#navbar {
+  padding: 50px 0px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 3fr;
+}
+
+#logo {
+}
+
+#nav-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  list-style: none;
+}
+
+#shop-nav-links {
+  padding-left: 20px;
+}
+
+.nav-links,
+.icon-items {
+}
+
+.nav-links a,
+.icon-items a {
+  font-family: 'Raleway';
+  text-decoration: none;
+  font-weight: 700;
+  color: #6c5e53;
+}
+
+.nav-links a:hover,
+.icon-items a:hover {
+  color: #d9461f;
+}
+
+/* MAIN CONTENT */
+#main-content {
+  justify-self: center;
+}
+
+#main-content h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  color: #c2b098;
+  font-size: 4rem;
+  font-family: 'Crimson Pro';
+  font-weight: 400;
+}
+
+#courses {
+  align-items: start;
+  width: 60vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  justify-items: center;
+}
+
+#courses-1 img,
+#courses-2 img {
+  width: 100%;
+  height: 100%;
+}
+
+#courses-1,
+#courses-2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  width: 90%;
+  height: 90%;
+}
+
+#courses-1 p,
+#courses-2 p {
+  font-family: 'Crimson Pro';
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 20px;
+  color: #c2b098;
+}
+
+/* BROWN SECTION */
+#brown-section-main {
+  height: 20vh;
+  width: 100vw;
+  background-image: url('portfolio-images/banner.jpg');
+}
+
+/* FOOTER SECTION */
+#footer-main-container {
+  background-color: #6c5e53;
+  width: 100vw;
+  padding: 30px;
+  display: grid;
+  justify-items: center;
+}
+
+#footer-container {
+  width: 70vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#footer-container p {
+  font-size: 0.8rem;
+  font-family: 'Montserrat';
+  color: #f7f7f7;
+}
+
+#footer-container div:nth-child(2) {
+  justify-self: end;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 5px;
+}
+
+#footer-container div:nth-child(2) button {
+  border: none;
+  background-color: #d0c3b3;
+  color: #f7f7f7;
+  display: grid;
+  align-items: center;
+  font-size: 1rem;
+  height: 30px;
+  width: 30px;
+}
+
+.visibility {
+  visibility: hidden;
+}
+
+#menu-icon {
+  background: none;
+}
+
+#hamburger {
+  background: none;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #main-section {
+    margin-top: 50px;
+    height: 60vh;
+  }
+  #main-container {
+    height: 80vh;
+  }
+  #hamburger {
+    visibility: visible;
+    position: fixed;
+    display: flex;
+    left: 30px;
+    top: 100px;
+    width: 25px;
+    border: none;
+  }
+
+  #close-icon {
+    display: none;
+  }
+
+  #menu-icon {
+    height: 25px;
+  }
+
+  #navbar {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    position: absolute;
+    left: 20px;
+    top: 70px;
+    height: 50%;
+  }
+
+  .nav-links {
+    margin: 10px;
+  }
+
+  #logo {
+    position: fixed;
+    left: -50px;
+    top: 20px;
+  }
+
+  #nav-container {
+    position: fixed;
+    display: block;
+    list-style: none;
+    /* animation: ; */
+  }
+
+  #shop-nav-links {
+    margin: none;
+    padding: 0px;
+  }
+}
