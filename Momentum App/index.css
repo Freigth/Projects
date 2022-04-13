@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+/* h1,
+h2,
+h3,
+input {
+  text-shadow: 2px 2px 2px black;
+} */
+
+body {
+  background-image: url(images/bg1.jpg);
+  transition: 1s ease;
+  background-size: cover;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  background-color: #000;
+  opacity: 0.3;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+body div {
+  position: relative;
+}
+
+input {
+  text-align: center;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #ffff;
+}
+
+#addFocus {
+  margin-top: 20px;
+  border: none;
+  border-bottom: 2px solid #ffff;
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+#time {
+  justify-self: center;
+  font-size: 7rem;
+}
+
+#greet {
+  width: 100%;
+  font-size: 2.5rem;
+}
+
+#focus {
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+#quotes.opacity {
+  opacity: 1;
+}
+
+#quotes {
+  font-size: 1.5rem;
+  opacity: 0;
+  margin-top: 100px;
+}
+
+#todo-text {
+  margin: 20px 5px;
+  border-bottom: 1px solid #ffff;
+  width: 100%;
+}
+
+#getFocus {
+  margin: 10px 0px;
+  font-size: 1.5rem;
+}
+
+/* CONTAINERS */
+#addQuotes-container {
+  position: absolute;
+  height: 100px;
+  width: 200px;
+  background-color: #0006;
+  bottom: 8%;
+  left: -100%;
+  display: flex;
+  transition: all 1s;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#addQuotes-container.display {
+  left: 1%;
+}
+
+#toDo-container {
+  padding: 20px;
+  position: absolute;
+  top: 29%;
+  right: 1%;
+  /* transform: translate(-50%, -50%); */
+  width: 300px;
+  height: 380px;
+  background-color: #0006;
+  transition: opacity 0.7s;
+  opacity: 0;
+  visibility: hidden;
+  border: 1px solid #fff6;
+}
+
+#toDo-container.display {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* TODO CONTAINER ITEMS */
+#main-todo {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+}
+
+#add {
+  border: transparent;
+  background-color: transparent;
+  color: #fff;
+  width: 50%;
+  padding: 5px 0px;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+#getTodo {
+  padding: 20px 0px;
+  list-style: none;
+  margin-top: 0px;
+  height: 60%;
+}
+
+#clear {
+  margin-top: 20px;
+  border: transparent;
+  background: transparent;
+  padding: 5px 0px;
+  width: 50%;
+  height: 10%;
+  transition: all 0.5s ease-in-out;
+}
+
+#add:hover,
+#clear:hover,
+#addQ-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* ADD QUOTES ITEMS */
+#addQuote {
+  width: 100%;
+}
+
+#addQ-btn {
+  margin-top: 10px;
+  border: transparent;
+  background-color: transparent;
+  padding: 5px 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* BUTTONS */
+#addQuote-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  font-weight: 100;
+  position: absolute;
+  left: 3%;
+  bottom: 3%;
+  transition: font 1s;
+}
+
+#toDo {
+  right: 2%;
+  bottom: 2%;
+  position: absolute;
+  font-weight: 100;
+  font-size: 1rem;
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid transparent;
+  transition: font 1s;
+}
+
+#toDo:hover,
+#addQuote-btn:hover {
+  font-weight: 700;
+}
+
+/* CLASS */
+.border {
+  border: 1px solid #fff;
+}
+
+.cursor {
+  cursor: pointer;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Momentum App</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="time">12:00</h1>
+        <h2 id="greet"><span id="greetings">Good Afternoon,</span> <span id="text" contenteditable="true">[Your
+                name]</span>
+        </h2>
+
+        <h3 id="focus">What is your main focus for today?</h3>
+        <input id="addFocus" type="text" autocomplete="off">
+        <h2 id="getFocus"></h2>
+        <h2 id="quotes">RAMDOM QUOTES</h2>
+    </div>
+
+    <!-- TODO CONTAINER -->
+    <div id="toDo-container">
+        <div class="main-todo">
+            <button type="submit" id="add">Add</button>
+            <input id="todo-text" type="text">
+        </div>
+
+        <ul id="getTodo">
+        </ul>
+        <button id="clear">Clear Recent</button>
+    </div>
+
+    <!-- ADD QUOTES CONTAINER -->
+    <div id="addQuotes-container">
+        <input id="addQuotes" type="text" name="" id="">
+        <button id="addQ-btn" class="cursor">Add Quote</button>
+    </div>
+
+    <!-- BUTTONS -->
+    <button id="toDo" class="cursor">Todo</button>
+    <button id="addQuote-btn" class="cursor">Add Quote</button>
+
+    <!-- SCRIPT -->
+    <script src="quotes.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
